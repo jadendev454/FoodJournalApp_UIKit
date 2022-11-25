@@ -13,6 +13,11 @@
 		1466A8DE292FB93100D6386C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1466A8DC292FB93100D6386C /* Main.storyboard */; };
 		1466A8E0292FB93100D6386C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1466A8DF292FB93100D6386C /* Assets.xcassets */; };
 		1466A8E3292FB93100D6386C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1466A8E1292FB93100D6386C /* LaunchScreen.storyboard */; };
+		1466A8EB292FBDE900D6386C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8EA292FBDE900D6386C /* HomeViewController.swift */; };
+		1466A8ED292FBE0F00D6386C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8EC292FBE0F00D6386C /* SettingsViewController.swift */; };
+		14A914EF29310286008775F2 /* EntryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A914EE29310286008775F2 /* EntryViewCell.swift */; };
+		14A914F1293104C6008775F2 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A914F0293104C6008775F2 /* EntryCell.swift */; };
+		14A914F329311D67008775F2 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A914F229311D67008775F2 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1466A8DF292FB93100D6386C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1466A8E2292FB93100D6386C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1466A8E4292FB93100D6386C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1466A8EA292FBDE900D6386C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1466A8EC292FBE0F00D6386C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		14A914EE29310286008775F2 /* EntryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewCell.swift; sourceTree = "<group>"; };
+		14A914F0293104C6008775F2 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		14A914F229311D67008775F2 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				1466A8DF292FB93100D6386C /* Assets.xcassets */,
 				1466A8E1292FB93100D6386C /* LaunchScreen.storyboard */,
 				1466A8E4292FB93100D6386C /* Info.plist */,
+				1466A8EA292FBDE900D6386C /* HomeViewController.swift */,
+				1466A8EC292FBE0F00D6386C /* SettingsViewController.swift */,
+				14A914EE29310286008775F2 /* EntryViewCell.swift */,
+				14A914F0293104C6008775F2 /* EntryCell.swift */,
+				14A914F229311D67008775F2 /* CustomTabBar.swift */,
 			);
 			path = FoodJournalApp_UIKit;
 			sourceTree = "<group>";
@@ -141,6 +156,11 @@
 				1466A8DB292FB93100D6386C /* ViewController.swift in Sources */,
 				1466A8D7292FB93100D6386C /* AppDelegate.swift in Sources */,
 				1466A8D9292FB93100D6386C /* SceneDelegate.swift in Sources */,
+				1466A8ED292FBE0F00D6386C /* SettingsViewController.swift in Sources */,
+				14A914F329311D67008775F2 /* CustomTabBar.swift in Sources */,
+				14A914F1293104C6008775F2 /* EntryCell.swift in Sources */,
+				1466A8EB292FBDE900D6386C /* HomeViewController.swift in Sources */,
+				14A914EF29310286008775F2 /* EntryViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
