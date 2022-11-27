@@ -16,19 +16,22 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
    
+    @IBOutlet weak var addEntryBtn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let layoutGuide = view.bounds;
         
         self.title = "My Food Journal"
         self.view.tintColor = .systemYellow
         
         popDemoEntries(8)
-        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        addEntryBtn.frame = CGRect(x: (layoutGuide.width / 2) - 40, y: layoutGuide.height - 160, width: 80, height: 80)
     }
     
     

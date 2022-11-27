@@ -19,19 +19,23 @@ class CustomTabBar: UITabBarController, UITabBarControllerDelegate {
 
         self.delegate = self
         self.selectedIndex = 0
-        setCenterButton()
+        //setCenterButton()
     }
 
     
     func setCenterButton() {
-        let middleBtn = UIButton(frame: CGRect(x: self.view.bounds.width / 2, y: -20, width: 60, height: 60))
+        let middleBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2) - 30, y: 0, width: 60, height: 60))
         
-        middleBtn.setBackgroundImage(UIImage(named: "home-icon-bg"), for: .normal)
+        middleBtn.setBackgroundImage(UIImage(systemName: "square.and.pencil"), for: .normal)
+        middleBtn.backgroundColor = UIColor.systemYellow
+        middleBtn.layer.cornerRadius = 25
+        middleBtn.tintColor = UIColor.black
         middleBtn.layer.shadowColor = UIColor.black.cgColor
         middleBtn.layer.shadowOpacity = 0.1
         middleBtn.layer.shadowOffset = CGSize(width: 4, height: 4)
         
         self.tabBar.addSubview(middleBtn)
+        
         middleBtn.addTarget(self, action: #selector(menubtnAction), for: .touchUpInside)
         
         self.view.layoutIfNeeded()
