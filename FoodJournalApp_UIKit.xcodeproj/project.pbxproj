@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1456719B2933FE4800528BFE /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456719A2933FE4800528BFE /* AddEntryViewController.swift */; };
 		1466A8D7292FB93100D6386C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8D6292FB93100D6386C /* AppDelegate.swift */; };
 		1466A8D9292FB93100D6386C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8D8292FB93100D6386C /* SceneDelegate.swift */; };
 		1466A8DB292FB93100D6386C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8DA292FB93100D6386C /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1456719A2933FE4800528BFE /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		1466A8D3292FB93100D6386C /* FoodJournalApp_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodJournalApp_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1466A8D6292FB93100D6386C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1466A8D8292FB93100D6386C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				14A914EE29310286008775F2 /* EntryViewCell.swift */,
 				14A914F0293104C6008775F2 /* EntryCell.swift */,
 				14A914F229311D67008775F2 /* CustomTabBar.swift */,
+				1456719A2933FE4800528BFE /* AddEntryViewController.swift */,
 			);
 			path = FoodJournalApp_UIKit;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				1466A8ED292FBE0F00D6386C /* SettingsViewController.swift in Sources */,
 				14A914F329311D67008775F2 /* CustomTabBar.swift in Sources */,
 				14A914F1293104C6008775F2 /* EntryCell.swift in Sources */,
+				1456719B2933FE4800528BFE /* AddEntryViewController.swift in Sources */,
 				1466A8EB292FBDE900D6386C /* HomeViewController.swift in Sources */,
 				14A914EF29310286008775F2 /* EntryViewCell.swift in Sources */,
 			);
