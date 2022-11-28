@@ -94,6 +94,15 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entry = journalEntries[indexPath.row]
+        
+        Utilities.selectedEntry = entry
+        //show(ShowEntryViewController(), sender: self)
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ShowEntry") as! ShowEntryViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
 }

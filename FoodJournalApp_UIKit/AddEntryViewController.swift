@@ -33,6 +33,8 @@ class AddEntryViewController: UIViewController {
         optioNavBarItem()
         
         tabBarController?.tabBar.isHidden = true
+        
+        view.tintColor = .systemYellow
     }
     
     
@@ -61,6 +63,7 @@ class AddEntryViewController: UIViewController {
     
     func optioNavBarItem() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "camera.badge.ellipsis"), style: .done, target: self, action: #selector(cameraSegue))
+        navigationItem.rightBarButtonItem?.tintColor = .systemYellow
     }
     
     

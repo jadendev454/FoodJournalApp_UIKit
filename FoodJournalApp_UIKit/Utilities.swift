@@ -22,6 +22,7 @@ struct JournalItem: Identifiable{
 public class Utilities{
     static var journalEntries:[JournalItem] = []
     static var popCount:Int = 0
+    static var selectedEntry:JournalItem = .init(decription: "", date: .now, imageName: UIImage())
     
     
     /*

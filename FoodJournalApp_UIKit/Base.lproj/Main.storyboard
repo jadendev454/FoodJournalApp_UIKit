@@ -12,7 +12,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="FoodJournalApp_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="HomeViewController" customModule="FoodJournalApp_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,14 +151,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-kX-1ND">
-                                <rect key="frame" x="10" y="111.66666666666666" width="367" height="24"/>
+                                <rect key="frame" x="10" y="163.66666666666666" width="367" height="24"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MEn-kX-1ND" secondAttribute="height" multiplier="367:300" id="v30-bq-YpH"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLo-qK-QVa">
-                                <rect key="frame" x="46.666666666666657" y="443.33333333333331" width="300" height="60"/>
+                                <rect key="frame" x="46.666666666666657" y="495.33333333333326" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="JX1-xa-rlB"/>
                                     <constraint firstAttribute="height" constant="60" id="cpi-De-thQ"/>
@@ -178,7 +179,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-kk-zmK">
-                                <rect key="frame" x="10" y="163.33333333333337" width="373" height="100"/>
+                                <rect key="frame" x="10" y="215.33333333333337" width="373" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="904-zf-QQg"/>
@@ -278,9 +279,82 @@
             </objects>
             <point key="canvasLocation" x="-1552" y="352"/>
         </scene>
+        <!--Show Entry View Controller-->
+        <scene sceneID="WX5-OX-D0P">
+            <objects>
+                <viewController storyboardIdentifier="ShowEntry" id="JbX-BZ-WxC" customClass="ShowEntryViewController" customModule="FoodJournalApp_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aFG-W0-HsY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-pu-D36">
+                                <rect key="frame" x="10" y="67.666666666666657" width="367" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TAF-pu-D36" secondAttribute="height" multiplier="367:300" id="Ikc-EC-yJE"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MG0-cG-Wmd">
+                                <rect key="frame" x="46.666666666666657" y="399.33333333333331" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pTM-KV-gwH"/>
+                                    <constraint firstAttribute="width" constant="300" id="tbM-tA-RSb"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="10" height="10"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="0.0" strokeOutset="0.0">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneBtn:" destination="JbX-BZ-WxC" eventType="touchUpInside" id="efR-aL-JVa"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOH-F1-Mtb">
+                                <rect key="frame" x="10" y="119.33333333333331" width="373" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QFa-6v-xbX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tdt-oU-ihr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tdt-oU-ihr" firstAttribute="trailing" secondItem="TOH-F1-Mtb" secondAttribute="trailing" constant="10" id="3Vu-bD-T27"/>
+                            <constraint firstItem="TAF-pu-D36" firstAttribute="leading" secondItem="tdt-oU-ihr" secondAttribute="leading" constant="10" id="Ivr-uV-DGK"/>
+                            <constraint firstItem="tdt-oU-ihr" firstAttribute="trailing" secondItem="TAF-pu-D36" secondAttribute="trailing" constant="16" id="PYh-bz-Pc2"/>
+                            <constraint firstItem="MG0-cG-Wmd" firstAttribute="centerX" secondItem="aFG-W0-HsY" secondAttribute="centerX" id="Q13-tL-rRx"/>
+                            <constraint firstItem="TOH-F1-Mtb" firstAttribute="top" secondItem="TAF-pu-D36" secondAttribute="bottom" constant="30" id="Uiu-JP-Luq"/>
+                            <constraint firstItem="MG0-cG-Wmd" firstAttribute="top" secondItem="TOH-F1-Mtb" secondAttribute="bottom" constant="189" id="XY6-hb-eB6"/>
+                            <constraint firstAttribute="bottom" secondItem="MG0-cG-Wmd" secondAttribute="bottom" constant="60" id="dUX-f4-30Z"/>
+                            <constraint firstItem="TAF-pu-D36" firstAttribute="centerX" secondItem="aFG-W0-HsY" secondAttribute="centerX" id="dWP-NK-QdP"/>
+                            <constraint firstItem="MG0-cG-Wmd" firstAttribute="top" secondItem="TOH-F1-Mtb" secondAttribute="bottom" constant="180" id="kS0-xY-zvV"/>
+                            <constraint firstItem="TAF-pu-D36" firstAttribute="top" secondItem="tdt-oU-ihr" secondAttribute="top" constant="10" id="vsm-rj-pdf"/>
+                            <constraint firstItem="TOH-F1-Mtb" firstAttribute="leading" secondItem="tdt-oU-ihr" secondAttribute="leading" constant="10" id="yIo-PD-GlK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AwH-oU-ye9"/>
+                    <connections>
+                        <outlet property="imageView" destination="TAF-pu-D36" id="Y7I-9A-hIG"/>
+                        <outlet property="textViewOut" destination="TOH-F1-Mtb" id="qab-98-Uwa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cu-1E-WgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3743" y="253"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OuO-w4-7o8"/>
+        <segue reference="gWO-d9-8sx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
