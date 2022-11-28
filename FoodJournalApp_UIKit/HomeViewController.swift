@@ -11,7 +11,7 @@ import Foundation
 
 class HomeViewController: UIViewController {
 
-    var journalEntries:[JournalItem] = []
+    var journalEntries:[JournalItem] = Utilities.journalEntries
     var popCount:Int = 0
     
     @IBOutlet weak var tableView: UITableView!
@@ -27,12 +27,24 @@ class HomeViewController: UIViewController {
         self.title = "My Food Journal"
         self.view.tintColor = .systemYellow
         
-        popDemoEntries(8)
         tableView.delegate = self
         tableView.dataSource = self
         
         addEntryBtn.frame = CGRect(x: (layoutGuide.width / 2) - 40, y: layoutGuide.height - 160, width: 80, height: 80)
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        journalEntries = Utilities.journalEntries
+        tableView.reloadData()
+        tabBarController?.tabBar.isHidden = false
+    }
+    
+    
+    @IBAction func addEntryAction(_ sender: UIButton) {
+        //self.show(AddEntryViewController(), sender: self)
+    }
+    
     
     
     func adjustJournalEntries(_ entry:[JournalItem]){

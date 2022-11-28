@@ -13,10 +13,62 @@ class AddEntryViewController: UIViewController {
     
     @IBOutlet weak var addItemBtn: UIButton!
     
+    @IBOutlet weak var imageViewOut: UIImageView!
+    
+    @IBOutlet weak var textBoxOut: UITextView!
+    
+    
+    //Vars
+    var isAddFoodItemView:Bool = false
+    var entryDecription:String = ""
+
+    private var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    private var selectedImage: UIImage?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        optioNavBarItem()
+        
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    
+    @IBAction func addItemActionBtn(_ sender: UIButton) {
+        addItem()
+    }
+    
+    
+    //Methods
+    func addItem() {
+        
+        entryDecription = textBoxOut.text
+        selectedImage = imageViewOut.image
+        
+        Utilities.addEntry(JournalItem(decription: entryDecription, date: Date.now, imageName: selectedImage!))
+        
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.isAddFoodItemView.toggle()
+        }
+    }
+    
+    
+    func optioNavBarItem() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "camera.badge.ellipsis"), style: .done, target: self, action: #selector(cameraSegue))
+    }
+    
+    
+    
+    @objc func cameraSegue(){
+        ImagePickerManager().pickImage(self) { _image in
+            //image is here
+            self.imageViewOut.image = _image
+        }
     }
 }

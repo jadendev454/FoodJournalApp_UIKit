@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-
+/*
 struct JournalItem:Identifiable{
     var id: UUID = UUID()
     
     let decription:String
     let date:Date
     let imageName:UIImage
-}
+}*/
