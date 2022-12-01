@@ -31,6 +31,11 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         
         addEntryBtn.frame = CGRect(x: (layoutGuide.width / 2) - 40, y: layoutGuide.height - 160, width: 80, height: 80)
+        
+        addEntryBtn.layer.shadowColor = UIColor.systemYellow.cgColor
+        addEntryBtn.layer.shadowOpacity = 1
+        addEntryBtn.layer.shadowOffset = .zero
+        addEntryBtn.layer.shadowRadius = 10
     }
     
     
