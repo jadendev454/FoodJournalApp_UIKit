@@ -151,7 +151,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowflake" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-kX-1ND">
-                                <rect key="frame" x="10" y="165.66666666666666" width="367" height="19"/>
+                                <rect key="frame" x="10" y="165.66666666666669" width="367" height="255.66666666666669"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MEn-kX-1ND" secondAttribute="height" multiplier="16:9" id="v30-bq-YpH"/>
@@ -159,7 +159,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLo-qK-QVa">
-                                <rect key="frame" x="46.666666666666657" y="495.33333333333326" width="300" height="60"/>
+                                <rect key="frame" x="46.666666666666657" y="732" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="JX1-xa-rlB"/>
                                     <constraint firstAttribute="height" constant="60" id="cpi-De-thQ"/>
@@ -179,7 +179,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Food Description?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-kk-zmK">
-                                <rect key="frame" x="10" y="215.33333333333337" width="373" height="100"/>
+                                <rect key="frame" x="10" y="452" width="373" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="904-zf-QQg"/>
@@ -353,6 +353,7 @@
                     <navigationItem key="navigationItem" id="AwH-oU-ye9"/>
                     <connections>
                         <outlet property="dateTextViewOut" destination="S5P-lb-6Mu" id="ePl-Qm-iiX"/>
+                        <outlet property="doneBtn" destination="MG0-cG-Wmd" id="qLZ-Ba-FnD"/>
                         <outlet property="imageView" destination="TAF-pu-D36" id="Y7I-9A-hIG"/>
                         <outlet property="textViewOut" destination="TOH-F1-Mtb" id="qab-98-Uwa"/>
                     </connections>

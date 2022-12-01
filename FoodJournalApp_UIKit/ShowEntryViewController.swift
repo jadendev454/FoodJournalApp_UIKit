@@ -16,6 +16,9 @@ class ShowEntryViewController: UIViewController {
     
     @IBOutlet weak var dateTextViewOut: UITextView!
     
+    @IBOutlet weak var doneBtn: UIButton!
+    
+    
     var imageViewDisp:UIImage?
     var descriptOut:String = ""
     var journalItemEntry: JournalItem = .init(decription: "", date: .now, imageName: UIImage())
@@ -30,11 +33,11 @@ class ShowEntryViewController: UIViewController {
         textViewOut.layer.cornerCurve = .continuous
         textViewOut.layer.cornerRadius = 10
         
-        /*
-        dateTextViewOut.layer.borderWidth = 1
-        dateTextViewOut.layer.cornerCurve = .continuous
-        dateTextViewOut.layer.cornerRadius = 10
-        */
+        
+        doneBtn.layer.shadowColor = UIColor.systemYellow.cgColor
+        doneBtn.layer.shadowOpacity = 1
+        doneBtn.layer.shadowOffset = .zero
+        doneBtn.layer.shadowRadius = 10
     }
     
     

@@ -38,6 +38,11 @@ class AddEntryViewController: UIViewController {
         textBoxOut.layer.borderWidth = 1
         textBoxOut.layer.cornerCurve = .continuous
         textBoxOut.layer.cornerRadius = 10
+        
+        addItemBtn.layer.shadowColor = UIColor.systemYellow.cgColor
+        addItemBtn.layer.shadowOpacity = 1
+        addItemBtn.layer.shadowOffset = .zero
+        addItemBtn.layer.shadowRadius = 10
     }
     
     
