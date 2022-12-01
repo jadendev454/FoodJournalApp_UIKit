@@ -124,12 +124,13 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         
         
         cell.setEntryCell(journalEntry: entry)
+        /*
         cell.backgroundColor = .clear
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 1.0
         cell.layer.shadowOffset = .zero
         cell.layer.shadowRadius = 100
-        
+        */
         
         updateHelperUI()
         
