@@ -150,11 +150,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-kX-1ND">
-                                <rect key="frame" x="10" y="163.66666666666666" width="367" height="24"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowflake" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-kX-1ND">
+                                <rect key="frame" x="10" y="165.66666666666666" width="367" height="19"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="MEn-kX-1ND" secondAttribute="height" multiplier="367:300" id="v30-bq-YpH"/>
+                                    <constraint firstAttribute="width" secondItem="MEn-kX-1ND" secondAttribute="height" multiplier="16:9" id="v30-bq-YpH"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
@@ -178,13 +178,12 @@
                                     <action selector="addItemActionBtn:" destination="E3T-AU-LM7" eventType="touchUpInside" id="CKU-4e-1am"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-kk-zmK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Food Description?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H4D-kk-zmK">
                                 <rect key="frame" x="10" y="215.33333333333337" width="373" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="904-zf-QQg"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -259,11 +258,11 @@
             </objects>
             <point key="canvasLocation" x="-2903" y="-2"/>
         </scene>
-        <!--Options-->
+        <!--Settings-->
         <scene sceneID="U6G-kK-c1I">
             <objects>
                 <navigationController id="zil-D0-qVj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Options" id="oou-Fm-2lJ">
+                    <tabBarItem key="tabBarItem" title="Settings" id="oou-Fm-2lJ">
                         <imageReference key="image" image="slider.horizontal.3" catalog="system" symbolScale="default" variableValue="0.0"/>
                         <color key="badgeColor" systemColor="systemYellowColor"/>
                     </tabBarItem>
@@ -288,14 +287,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-pu-D36">
-                                <rect key="frame" x="10" y="67.666666666666657" width="367" height="24"/>
+                                <rect key="frame" x="10" y="67.666666666666671" width="367" height="210"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="TAF-pu-D36" secondAttribute="height" multiplier="367:300" id="Ikc-EC-yJE"/>
+                                    <constraint firstAttribute="width" secondItem="TAF-pu-D36" secondAttribute="height" multiplier="16:9" id="Ikc-EC-yJE"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MG0-cG-Wmd">
-                                <rect key="frame" x="46.666666666666657" y="399.33333333333331" width="300" height="60"/>
+                                <rect key="frame" x="46.666666666666657" y="732" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pTM-KV-gwH"/>
                                     <constraint firstAttribute="width" constant="300" id="tbM-tA-RSb"/>
@@ -314,15 +313,24 @@
                                     <action selector="doneBtn:" destination="JbX-BZ-WxC" eventType="touchUpInside" id="efR-aL-JVa"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOH-F1-Mtb">
-                                <rect key="frame" x="10" y="119.33333333333331" width="373" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Food Description?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOH-F1-Mtb">
+                                <rect key="frame" x="10" y="305.33333333333331" width="373" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="QFa-6v-xbX"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="date" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S5P-lb-6Mu">
+                                <rect key="frame" x="10" y="415.33333333333331" width="373" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="e6i-jB-bSL"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -330,20 +338,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tdt-oU-ihr" firstAttribute="trailing" secondItem="TOH-F1-Mtb" secondAttribute="trailing" constant="10" id="3Vu-bD-T27"/>
+                            <constraint firstItem="tdt-oU-ihr" firstAttribute="trailing" secondItem="S5P-lb-6Mu" secondAttribute="trailing" constant="10" id="7wK-kK-gGZ"/>
+                            <constraint firstItem="S5P-lb-6Mu" firstAttribute="top" secondItem="TOH-F1-Mtb" secondAttribute="bottom" constant="10" id="F5Y-D3-p5P"/>
                             <constraint firstItem="TAF-pu-D36" firstAttribute="leading" secondItem="tdt-oU-ihr" secondAttribute="leading" constant="10" id="Ivr-uV-DGK"/>
                             <constraint firstItem="tdt-oU-ihr" firstAttribute="trailing" secondItem="TAF-pu-D36" secondAttribute="trailing" constant="16" id="PYh-bz-Pc2"/>
                             <constraint firstItem="MG0-cG-Wmd" firstAttribute="centerX" secondItem="aFG-W0-HsY" secondAttribute="centerX" id="Q13-tL-rRx"/>
                             <constraint firstItem="TOH-F1-Mtb" firstAttribute="top" secondItem="TAF-pu-D36" secondAttribute="bottom" constant="30" id="Uiu-JP-Luq"/>
-                            <constraint firstItem="MG0-cG-Wmd" firstAttribute="top" secondItem="TOH-F1-Mtb" secondAttribute="bottom" constant="189" id="XY6-hb-eB6"/>
+                            <constraint firstItem="S5P-lb-6Mu" firstAttribute="leading" secondItem="tdt-oU-ihr" secondAttribute="leading" constant="10" id="W7G-ak-AQF"/>
                             <constraint firstAttribute="bottom" secondItem="MG0-cG-Wmd" secondAttribute="bottom" constant="60" id="dUX-f4-30Z"/>
-                            <constraint firstItem="TAF-pu-D36" firstAttribute="centerX" secondItem="aFG-W0-HsY" secondAttribute="centerX" id="dWP-NK-QdP"/>
-                            <constraint firstItem="MG0-cG-Wmd" firstAttribute="top" secondItem="TOH-F1-Mtb" secondAttribute="bottom" constant="180" id="kS0-xY-zvV"/>
                             <constraint firstItem="TAF-pu-D36" firstAttribute="top" secondItem="tdt-oU-ihr" secondAttribute="top" constant="10" id="vsm-rj-pdf"/>
                             <constraint firstItem="TOH-F1-Mtb" firstAttribute="leading" secondItem="tdt-oU-ihr" secondAttribute="leading" constant="10" id="yIo-PD-GlK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AwH-oU-ye9"/>
                     <connections>
+                        <outlet property="dateTextViewOut" destination="S5P-lb-6Mu" id="ePl-Qm-iiX"/>
                         <outlet property="imageView" destination="TAF-pu-D36" id="Y7I-9A-hIG"/>
                         <outlet property="textViewOut" destination="TOH-F1-Mtb" id="qab-98-Uwa"/>
                     </connections>
@@ -359,6 +368,7 @@
     <resources>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
+        <image name="snowflake" catalog="system" width="119" height="128"/>
         <image name="square.and.arrow.down.on.square" catalog="system" width="122" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">

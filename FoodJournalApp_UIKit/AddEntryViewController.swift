@@ -35,6 +35,9 @@ class AddEntryViewController: UIViewController {
         tabBarController?.tabBar.isHidden = true
         
         view.tintColor = .systemYellow
+        textBoxOut.layer.borderWidth = 1
+        textBoxOut.layer.cornerCurve = .continuous
+        textBoxOut.layer.cornerRadius = 10
     }
     
     
