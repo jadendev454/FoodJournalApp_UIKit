@@ -43,6 +43,8 @@ class HomeViewController: UIViewController {
         journalEntries = Utilities.journalEntries
         tableView.reloadData()
         tabBarController?.tabBar.isHidden = false
+        
+        updateHelperUI()
     }
     
     
@@ -77,6 +79,33 @@ class HomeViewController: UIViewController {
         
         print("\(journalEntries.count)")
     }
+    
+    
+    
+    func updateHelperUI() {
+        if journalEntries.isEmpty{
+            
+            let layoutGuide = view.bounds;
+            
+            let viewCentre = view.center
+            let viewMargins = view.layoutMarginsGuide.layoutFrame
+            
+            let helperTextView = UITextView(frame: CGRect(x: (layoutGuide.width / 2) - layoutGuide.width / 2, y: (layoutGuide.height / 2) - 150, width: layoutGuide.width, height: (layoutGuide.height / 2) - 150))
+            helperTextView.text = "\"Looks Empty in here\".....why not add something?"
+            helperTextView.font = .systemFont(ofSize: 30, weight: .heavy)
+            helperTextView.textColor = .systemGray
+            helperTextView.textAlignment = .center
+            helperTextView.backgroundColor = .clear
+            helperTextView.isEditable = false
+            helperTextView.tag = 100
+            
+            view.addSubview(helperTextView)
+        }
+        else{
+            let _view = view.viewWithTag(100)
+            _view?.removeFromSuperview()
+        }
+    }
 
 }
 
@@ -95,6 +124,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         
         
         cell.setEntryCell(journalEntry: entry)
+        cell.backgroundColor = .clear
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.shadowOffset = .zero
+        cell.layer.shadowRadius = 100
+        
+        
+        updateHelperUI()
         
         return cell
     }

@@ -35,6 +35,7 @@ class CustomTabBar: UITabBarController, UITabBarControllerDelegate {
         middleBtn.layer.shadowOffset = CGSize(width: 4, height: 4)
         
         self.tabBar.addSubview(middleBtn)
+
         
         middleBtn.addTarget(self, action: #selector(menubtnAction), for: .touchUpInside)
         
