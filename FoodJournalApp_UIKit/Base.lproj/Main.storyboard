@@ -150,8 +150,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowflake" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-kX-1ND">
-                                <rect key="frame" x="10" y="165.66666666666669" width="367" height="255.66666666666669"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-kX-1ND">
+                                <rect key="frame" x="10" y="166.66666666666663" width="367" height="254"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MEn-kX-1ND" secondAttribute="height" multiplier="16:9" id="v30-bq-YpH"/>
@@ -287,7 +287,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-pu-D36">
-                                <rect key="frame" x="10" y="67.666666666666671" width="367" height="210"/>
+                                <rect key="frame" x="10" y="67.666666666666671" width="367" height="209.99999999999994"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TAF-pu-D36" secondAttribute="height" multiplier="16:9" id="Ikc-EC-yJE"/>
                                 </constraints>
@@ -368,8 +368,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
-        <image name="snowflake" catalog="system" width="119" height="128"/>
         <image name="square.and.arrow.down.on.square" catalog="system" width="122" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
