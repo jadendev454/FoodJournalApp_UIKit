@@ -65,6 +65,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let option = settingOptions[indexPath.row]
         
         cell.textLabel?.text = option.title
+        cell.selectionStyle = .none
         darkModeSwitch.center.x = cell.frame.width - 10
         darkModeSwitch.center.y = cell.frame.height / 2
         darkModeSwitch.addTarget(self, action: #selector(switchValueDidChange(_:)), for: .valueChanged)
