@@ -7,24 +7,70 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+
+struct SettingsOption{
+    let title: String
+    let handler: (() -> Void)
+}
+
+
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var darkModeSwitch: UISwitch = {
+        var _switch = UISwitch()
+        _switch.onTintColor = .systemGreen
+        return _switch
+    }()
+    var settingOptions: [SettingsOption] = [
+        SettingsOption(title: "Darkmode", handler: {
+            print("Toggle Darkmode")
+        })
+    ]
+    var settingsTableView: UITableView = {
+        let newTable = UITableView(frame: .zero, style: .insetGrouped)
+        newTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return newTable
+    }()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Settings"
         self.view.tintColor = .systemYellow
+        
+        view.addSubview(settingsTableView)
+        settingsTableView.delegate = self
+        settingsTableView.dataSource = self
+        settingsTableView.frame = view.bounds
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func switchValueDidChange(_ sender: UISwitch) {
+        if sender.isOn == true{
+            view.window?.overrideUserInterfaceStyle = .dark
+        }
+        else{
+            view.window?.overrideUserInterfaceStyle = .light
+        }
     }
-    */
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return settingOptions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let option = settingOptions[indexPath.row]
+        
+        cell.textLabel?.text = option.title
+        darkModeSwitch.center.x = cell.frame.width - 10
+        darkModeSwitch.center.y = cell.frame.height / 2
+        darkModeSwitch.addTarget(self, action: #selector(switchValueDidChange(_:)), for: .valueChanged)
+        cell.addSubview(darkModeSwitch)
+        
+        return cell
+    }
+    
 }

@@ -22,6 +22,8 @@ class EntryViewCell: UITableViewCell {
         
         imageViewCell.image = journalEntry.imageName
         entryLabel.text = journalEntry.decription
+        entryLabel.textColor = .black
         dateLabel.text = formatter3.string(from: journalEntry.date)
+        dateLabel.textColor = .black
     }
 }

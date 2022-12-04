@@ -124,8 +124,11 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         
         
         cell.setEntryCell(journalEntry: entry)
+        cell.backgroundColor = .systemYellow
+        cell.layer.cornerRadius = 15
+        cell.layer.cornerCurve = .continuous
+        cell.frame = view.bounds
         /*
-        cell.backgroundColor = .clear
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 1.0
         cell.layer.shadowOffset = .zero
