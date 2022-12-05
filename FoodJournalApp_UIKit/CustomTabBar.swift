@@ -19,7 +19,6 @@ class CustomTabBar: UITabBarController, UITabBarControllerDelegate {
 
         self.delegate = self
         self.selectedIndex = 0
-        //setCenterButton()
     }
 
     

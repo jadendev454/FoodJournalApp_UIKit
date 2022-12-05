@@ -10,14 +10,12 @@
 		1456719B2933FE4800528BFE /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456719A2933FE4800528BFE /* AddEntryViewController.swift */; };
 		1466A8D7292FB93100D6386C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8D6292FB93100D6386C /* AppDelegate.swift */; };
 		1466A8D9292FB93100D6386C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8D8292FB93100D6386C /* SceneDelegate.swift */; };
-		1466A8DB292FB93100D6386C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8DA292FB93100D6386C /* ViewController.swift */; };
 		1466A8DE292FB93100D6386C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1466A8DC292FB93100D6386C /* Main.storyboard */; };
 		1466A8E0292FB93100D6386C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1466A8DF292FB93100D6386C /* Assets.xcassets */; };
 		1466A8E3292FB93100D6386C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1466A8E1292FB93100D6386C /* LaunchScreen.storyboard */; };
 		1466A8EB292FBDE900D6386C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8EA292FBDE900D6386C /* HomeViewController.swift */; };
 		1466A8ED292FBE0F00D6386C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A8EC292FBE0F00D6386C /* SettingsViewController.swift */; };
 		14A914EF29310286008775F2 /* EntryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A914EE29310286008775F2 /* EntryViewCell.swift */; };
-		14A914F1293104C6008775F2 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A914F0293104C6008775F2 /* EntryCell.swift */; };
 		14A914F329311D67008775F2 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A914F229311D67008775F2 /* CustomTabBar.swift */; };
 		14BC93D62935174C00909E8D /* ShowEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BC93D52935174C00909E8D /* ShowEntryViewController.swift */; };
 		14C534B629348BFF003F3063 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C534B529348BFF003F3063 /* Utilities.swift */; };
@@ -29,7 +27,6 @@
 		1466A8D3292FB93100D6386C /* FoodJournalApp_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodJournalApp_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1466A8D6292FB93100D6386C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1466A8D8292FB93100D6386C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1466A8DA292FB93100D6386C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1466A8DD292FB93100D6386C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1466A8DF292FB93100D6386C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1466A8E2292FB93100D6386C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,7 +34,6 @@
 		1466A8EA292FBDE900D6386C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1466A8EC292FBE0F00D6386C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		14A914EE29310286008775F2 /* EntryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewCell.swift; sourceTree = "<group>"; };
-		14A914F0293104C6008775F2 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		14A914F229311D67008775F2 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		14BC93D52935174C00909E8D /* ShowEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryViewController.swift; sourceTree = "<group>"; };
 		14C534B529348BFF003F3063 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -76,7 +72,6 @@
 			children = (
 				1466A8D6292FB93100D6386C /* AppDelegate.swift */,
 				1466A8D8292FB93100D6386C /* SceneDelegate.swift */,
-				1466A8DA292FB93100D6386C /* ViewController.swift */,
 				1466A8DC292FB93100D6386C /* Main.storyboard */,
 				1466A8DF292FB93100D6386C /* Assets.xcassets */,
 				1466A8E1292FB93100D6386C /* LaunchScreen.storyboard */,
@@ -84,7 +79,6 @@
 				1466A8EA292FBDE900D6386C /* HomeViewController.swift */,
 				1466A8EC292FBE0F00D6386C /* SettingsViewController.swift */,
 				14A914EE29310286008775F2 /* EntryViewCell.swift */,
-				14A914F0293104C6008775F2 /* EntryCell.swift */,
 				14A914F229311D67008775F2 /* CustomTabBar.swift */,
 				1456719A2933FE4800528BFE /* AddEntryViewController.swift */,
 				14C534B529348BFF003F3063 /* Utilities.swift */,
@@ -166,12 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C534B829348E46003F3063 /* Camera.swift in Sources */,
-				1466A8DB292FB93100D6386C /* ViewController.swift in Sources */,
 				1466A8D7292FB93100D6386C /* AppDelegate.swift in Sources */,
 				1466A8D9292FB93100D6386C /* SceneDelegate.swift in Sources */,
 				1466A8ED292FBE0F00D6386C /* SettingsViewController.swift in Sources */,
 				14A914F329311D67008775F2 /* CustomTabBar.swift in Sources */,
-				14A914F1293104C6008775F2 /* EntryCell.swift in Sources */,
 				1456719B2933FE4800528BFE /* AddEntryViewController.swift in Sources */,
 				1466A8EB292FBDE900D6386C /* HomeViewController.swift in Sources */,
 				14C534B629348BFF003F3063 /* Utilities.swift in Sources */,

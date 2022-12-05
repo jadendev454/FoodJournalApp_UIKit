@@ -49,7 +49,7 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func addEntryAction(_ sender: UIButton) {
-        //self.show(AddEntryViewController(), sender: self)
+        //
     }
     
     
@@ -59,6 +59,8 @@ class HomeViewController: UIViewController {
     }
     
 
+    
+    //For Testing Only
     func popDemoEntries(_ amount:Int) {
         
         if popCount > 0 {
@@ -82,13 +84,11 @@ class HomeViewController: UIViewController {
     
     
     
+    
     func updateHelperUI() {
         if journalEntries.isEmpty{
             
             let layoutGuide = view.bounds;
-            
-            let viewCentre = view.center
-            let viewMargins = view.layoutMarginsGuide.layoutFrame
             
             let helperTextView = UITextView(frame: CGRect(x: (layoutGuide.width / 2) - layoutGuide.width / 2, y: (layoutGuide.height / 2) - 150, width: layoutGuide.width, height: (layoutGuide.height / 2) - 150))
             helperTextView.text = "\"Looks Empty in here\".....why not add something?"
@@ -128,12 +128,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         cell.layer.cornerRadius = 15
         cell.layer.cornerCurve = .continuous
         cell.frame = view.bounds
-        /*
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOpacity = 1.0
-        cell.layer.shadowOffset = .zero
-        cell.layer.shadowRadius = 100
-        */
         
         updateHelperUI()
         
@@ -144,7 +138,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         let entry = journalEntries[indexPath.row]
         
         Utilities.selectedEntry = entry
-        //show(ShowEntryViewController(), sender: self)
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ShowEntry") as! ShowEntryViewController
@@ -158,6 +151,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
             Utilities.journalEntries.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
+            // This "If" statement is not needed but lets keep it here so you don't have to go find it on stack-overflow🤣
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }

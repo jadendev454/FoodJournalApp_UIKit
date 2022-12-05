@@ -78,7 +78,7 @@ class AddEntryViewController: UIViewController {
     
     @objc func cameraSegue(){
         ImagePickerManager().pickImage(self) { _image in
-            //image is here
+            // Image should be in here.....lets hope
             self.imageViewOut.image = _image
         }
     }
